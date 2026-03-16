@@ -1,10 +1,7 @@
 # Arquivos de documentação e explicação
 *.pdf
-*.md
-README*.md
 GUIA_*.md
 MANUAL_*.md
-SISTEMA_*.md
 FLUXOGRAMA_*.md
 PACOTE_*.md
 
@@ -41,6 +38,17 @@ env/
 ENV/
 .venv/
 
+# Node / Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Variáveis de ambiente (credenciais locais)
+.env
+.env.local
+.env.*.local
+
 # IDE
 .vscode/
 .idea/
@@ -59,19 +67,19 @@ Thumbs.db
 *.temp
 
 # Sistema específico - dados temporários
-dados_entrada/*.csv
-dados_entrada/*.xlsx
-dados_entrada/*.json
-!dados_entrada/.gitkeep
+Sistema_Analise/dados_entrada/*.csv
+Sistema_Analise/dados_entrada/*.xlsx
+Sistema_Analise/dados_entrada/*.json
+!Sistema_Analise/dados_entrada/.gitkeep
 
-resultados/*.html
-resultados/*.json
-resultados/*.csv
-!resultados/.gitkeep
+Sistema_Analise/resultados/*.html
+Sistema_Analise/resultados/*.json
+Sistema_Analise/resultados/*.csv
+!Sistema_Analise/resultados/.gitkeep
 
-diagnosticos/*.txt
-diagnosticos/*.json
-!diagnosticos/.gitkeep
+Sistema_Analise/diagnosticos/*.txt
+Sistema_Analise/diagnosticos/*.json
+!Sistema_Analise/diagnosticos/.gitkeep
 
 # Sistema de Dúvidas - dados temporários e sensíveis
 Sistema_Analise/duvidas/*.json
@@ -112,11 +120,4 @@ Site/teste_sistema.html
 Site/configuracao_forms.html
 Site/manual_completo.html
 Site/teste_diagnostico.html
-
-README_SISTEMA_DUVIDAS.md
-SISTEMA_COMPLETO.md
-package.json
-teste-tcle.html
-vercel.json
-
 
